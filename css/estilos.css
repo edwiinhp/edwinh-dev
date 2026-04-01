@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, rgb(227, 45, 227), #00f2fe);
+    min-height: 100vh;
+    color: #333
+}
+
+form{
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    max-width: 420px;
+    margin: 30px auto;
+    padding: 40px 35px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+
+}
+input {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    transition: border 0.3s;
+    justify-content: center;
+}
+
+input:focus{
+    outline: none;
+    border-color: #0066ff;
+    box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #00cc66;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333
+}
+label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
+}
+header{
+    text-decoration-style: solid;
+    background: linear-gradient(to right, rgb(227, 45, 227), #00f2fe);
+    color: white;
+    padding: 10px 30px;
+    width: 100%;
+    position: sticky;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+.container ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    font-family: fantasy;
+    font-size: 28px;
+    width: auto;
+}
+.btn{
+    background-color: #0066ff;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 8px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    min-width: 110px;
+}
+
+.btn:hover{
+    background-color: #4d94ff;
+} 
+
+footer nav{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+input, label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button:hover{
+    background-color: #00b359;
+    transform: translate(-2px);
+}
+
+footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 12px 10px;
+    margin-top: auto;
+    font-size: 13px;
+}
+
+footer p{
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+footer nav{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+footer nav a{
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+form a{
+    text-decoration: none;
+    color: #5e9af3;
+}
+form p{
+    display: inline;
+}
+form a:hover{
+    color: #0066ff;
+}
+@media(max-width: 480px){
+    form{
+        padding: 30px 20px;
+    }
+}
